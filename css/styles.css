@@ -4,6 +4,10 @@
       display: none;
   }
 
+  h1 {
+      margin: 0;
+  }
+
   #menu_checkbox:checked ~ nav {
     display: block;
 }
@@ -13,8 +17,16 @@
     color: #fff;
     padding: 10px;
     align-items: center;
-    position: relative;
+    position: sticky;
+    top: 0;
  }
+ .logo{
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+    width: 100px;
+ }
+
  
  nav {
      position: absolute;
@@ -56,25 +68,36 @@
       text-align: center;
       color:#fff;
       background-position: center;
-      position: 
+      padding-top: 10px;
 }
+
+.cta_all{
+    padding: 20px;
+    list-style: none;
+}
+
 .cta_sell{
     color: #fff;
     border: 4px solid #fff;
     border-radius: 30px;
     padding: 10px;
+    margin: 20px;
+    display: inline-block;
     
 }
 .cta_buy{
     color: #fff;
     border: 4px solid #fff;
     border-radius: 30px;
-    padding: 10px;
+    padding: 10px 20px;
+    margin: 20px;
+    display: inline-block;
 }
 .cta_trade{
     color: #fff;
     border: 4px solid #fff;
     border-radius: 30px;
     padding: 10px;
-    display: flex;
+    display: inline-block;
+    margin: 20px;
 }
