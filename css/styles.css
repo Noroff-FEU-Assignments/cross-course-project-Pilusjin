@@ -1,0 +1,103 @@
+
+  nav,
+  #menu_checkbox {
+      display: none;
+  }
+
+  h1 {
+      margin: 0;
+  }
+
+  #menu_checkbox:checked ~ nav {
+    display: block;
+}
+
+  header {
+    background-color: #211426;
+    color: #fff;
+    padding: 10px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+ }
+ .logo{
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+    width: 100px;
+ }
+
+ 
+ nav {
+     position: absolute;
+     background: #211426;
+     color:#fff;
+     top: 0px;
+     left: 0px;
+ }
+
+ nav a {
+     display: block;
+     color: #fff;
+     padding: 10px 20px;
+ }
+
+  @media (min-width: 600px){
+    nav { 
+        display: block;
+        position: static;
+        }
+    
+      .hamburger_icon {
+        display: none;
+        }
+
+    nav a {
+        display: inline-block;
+        }
+
+  }
+
+
+  .welcome {
+      background-image: url("../images/background-image.jpg");
+      width: 100%;
+      min-height: 700px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      text-align: center;
+      color:#fff;
+      background-position: center;
+      padding-top: 10px;
+}
+
+.cta_all{
+    padding: 20px;
+    list-style: none;
+}
+
+.cta_sell{
+    color: #fff;
+    border: 4px solid #fff;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 20px;
+    display: inline-block;
+    
+}
+.cta_buy{
+    color: #fff;
+    border: 4px solid #fff;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin: 20px;
+    display: inline-block;
+}
+.cta_trade{
+    color: #fff;
+    border: 4px solid #fff;
+    border-radius: 30px;
+    padding: 10px;
+    display: inline-block;
+    margin: 20px;
+}
