@@ -3,7 +3,7 @@ HEAD
 body{
     margin: 0;
     padding: 0;
-    font-family: rockwell,
+    font-family: Arial, Helvetica, sans-serif,
 }
    
 #menu_checkbox:checked ~ nav {
