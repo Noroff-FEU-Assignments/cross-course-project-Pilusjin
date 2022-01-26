@@ -1,59 +1,51 @@
-
-HEAD
-body{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif,
+  
+  nav,
+  #menu_checkbox {
+      display: none;
 }
-   
+
 #menu_checkbox:checked ~ nav {
     display: block;
     position: absolute;
     top: 60px;
 }
 
-  nav,
-  #menu_checkbox {
-      display: none;
-  }
+h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    padding: 50px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
 
-  h1 {
-      margin: 0;
-      font-size: 40px;
-      text-transform: uppercase;
-      padding-top: 50px;
-  }
+h2 {
+    text-align: center;
+}
 
 .hamburger_icon{
-    display: flex;
+    position: absolute;
     font-size: 30px;
     padding: 20px;
 }
 
-.cart_icon {
-    display: block;
-    text-align: right;
-    margin-right: 20px;
-    font-size: 25px;
-}
-
-  header {
+header {
     background-color: #211426;
     color: #fff;
-    padding: 10px;
+    padding: 30px;
     align-items: center;
     position: sticky;
     top: 0;
  }
- .logo{
+
+.logo{
      display: block;
      margin-left: auto;
      margin-right: auto;
      width: 150px;
  }
 
- 
- nav {
+nav {
      position: relative;
      background: #211426;
      color:#fff;
@@ -62,20 +54,54 @@ body{
      text-align: center;
  }
 
- nav a {
+nav a {
      display: block;
      color: #fff;
      padding: 10px 20px;
      text-decoration: none;
  }
+
  nav a:hover{
      text-decoration: underline;
  }
 
-  @media (min-width: 700px){
+.cta_home{
+    color: #fff;
+    border: 4px solid #fff;
+    border-radius: 30px;
+    padding: 10px 20px;
+    text-decoration:none;
+    font-size: 25px;
+}
+
+.cta_home:hover{
+    background-color:#fff;
+    color:#211426;
+}
+
+.games {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    align-items: center;
+    margin: auto;
+    gap: 60px;
+    padding-top: 50px;
+}
+
+footer{
+    margin: 0px;
+    padding: 20px;
+    color:#fff;
+    background: #211426;
+    text-align: center;
+}
+
+@media (min-width: 700px){
     nav { 
         display: block;
-        position: static;
+        position: relative;
+        text-align: center;
         }
     
       .hamburger_icon {
@@ -87,109 +113,110 @@ body{
         }
 
   }
+/* Home page */
 
 
-  .welcome {
-      background-image: url("../images/background-image.jpg");
-      width: 100%;
-      min-height: 1000px;
-      background-size: cover;
-      background-repeat: no-repeat;
-      text-align: center;
-      color:#fff;
-      background-position: center;
-      padding-top: 10px;
-}
-
-.cta_all{
-    padding: 40px;
-    list-style: none;
-    font-size: 25px;
-}
-.cta_sell{
-    color: #fff;
-    border: 4px solid #fff;
-    border-radius: 30px;
-    padding: 10px 20px;
-    margin: 20px;
-    display: inline-block;
-    text-decoration: none;
-}
-.cta_sell:hover{
-    background-color:#fff;
-    color:#211426;
-}
-
-.cta_buy{
-    color: #fff;
-    border: 4px solid #fff;
-    border-radius: 30px;
-    padding: 10px 20px;
-    margin: 20px;
-    display: inline-block;
-    text-decoration: none;
-}
-.cta_buy:hover{
-    background-color:#fff;
-    color:#211426;
-}
-.cta_trade{
-    color: #fff;
-    border: 4px solid #fff;
-    border-radius: 30px;
-    padding: 10px 20px;
-    margin: 20px;
-    display: inline-block;
-    text-decoration: none;
-    }
-.cta_trade:hover{
-        background-color:#fff;
-        color:#211426;
-    }
-
-footer{
-    margin: 0px;
-    padding: 20px;
-    color:#fff;
-    background: #211426;
+.welcome {
+    background-image: url("../images/background-image.jpg");
+    width: 100%;
+    min-height: 1000px;
+    background-size: cover;
+    background-repeat: no-repeat;
     text-align: center;
+    color:#fff;
+    background-position: center;
+    padding-top: 10px;
 }
-/*contact us*/
+
+
+/* Contact us */
 
 input,
 textarea {
-    border: 1px solid;
+    border: 3px solid #211426;
     border-radius: 1px;
-    margin: 2px 5px 5px 0px;
+    margin: 10px 10px 10px 0px;
     min-width: 300px;
 }
-h1{
-    text-align: center;
+
+textarea {
+    min-height: 200px;
 }
+
 .images{
     height: 30px;
 }
-textarea{
-    min-height: 200px;
-}
-.contact__content {
-    text-align: center;
-    border: 2px solid#707070;
 
-}
-.cta-large{
-    min-width: 250px;
-    background-color: #211426;
-    color: white;
+.contact_info {
+    display: block;
     text-align: center;
-    border-radius: 15px;
-    margin: auto;
+    padding: 20px;
 }
+
+.cta-standard {
+    color: #fff; 
+    background-color: #211426;
+    border: 4px solid #211426;
+    border-radius: 30px;
+    display: block;
+    font-size: 25px;
+    text-align: center;
+    margin: auto;
+    width: 200px;
+}
+
+.cta-standard:hover {
+    color: #211426; 
+    background-color: #fff;
+}
+
 .form {
     display: flex;
-    text-align: center;
     flex-direction:column;
     align-items: center;
-    color:#000000;
-    
-  }
+    color:#211426
+}
+
+.form > * {
+    flex: 1;
+    padding: 10px; 
+}
+
+.contact_content {
+    padding: 20px 0px;
+}
+
+.contact_page {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.contact_page > * {
+    flex: 1; 
+}
+
+@media (min-width: 700px) {
+    .contact_page {
+        flex-direction: row;
+        margin: auto; 
+        gap: 30px; 
+        max-width: 1000px;
+    }
+}
+
+/* Buy games */
+
+
+
+
+
+/* My account */ 
+
+.account {
+        display: flex;
+        text-align: center;
+        flex-direction:column;
+        align-items: center;
+        color:#000000;
+}
