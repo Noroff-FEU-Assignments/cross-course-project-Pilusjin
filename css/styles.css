@@ -207,9 +207,30 @@ textarea {
 
 /* Buy games */
 
+.games_images {
+    width: 100px;
+    height: 150px;
+}
 
+.products {
+    text-align: center;
+    border: 3px solid #211426;
+    padding: 8px;
+}
+.product_list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+    border-image: 10px;
+  }
 
-
+@media (min-width: 700px) {
+    .product_list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
 
 /* My account */ 
 
