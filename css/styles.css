@@ -215,7 +215,9 @@ textarea {
 .products {
     text-align: center;
     border: 3px solid #211426;
-    padding: 8px;
+    padding: 8px 8px;
+    display: block;
+    margin: 10px auto;
 }
 .product_list {
     display: grid;
@@ -223,7 +225,7 @@ textarea {
     grid-gap: 20px;
     max-width: 1000px;
     margin: auto;
-    border-image: 10px;
+    padding-bottom: 50px;
   }
 
 @media (min-width: 700px) {
@@ -241,3 +243,20 @@ textarea {
         align-items: center;
         color:#000000;
 }
+
+
+/* Game page */ 
+
+.product_image {
+    width: 150px;
+    height: 200px;
+    margin: auto;
+    border: 3px solid #211426;
+    padding: 8px 8px;
+    display: block;
+}
+.product_pages {
+    border: 3px solid#211426;
+    padding: 8px 8px 8px 8px;
+
+}        
