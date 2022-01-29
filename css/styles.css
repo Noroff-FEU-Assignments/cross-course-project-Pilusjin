@@ -1,5 +1,9 @@
   
-  nav,
+  body {
+      font-family:monaco,consolas,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+nav,
   #menu_checkbox {
       display: none;
 }
@@ -301,6 +305,7 @@ textarea {
     background-color: #211426;
     color: #fff;
     padding: 20px;
+    
 }
 
 .recent_activity_list {
@@ -340,6 +345,23 @@ textarea {
     max-width: 400px;
     margin: 15px auto;
     padding: 20px;
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    text-align: center;
+}
+.information > * {
+    flex:1;
+}
+@media (min-width: 700px) {
+.information{
+        flex-direction: row;
+        margin: auto;
+        gap: 30px;
+        max-width: 1000px;
+}
 }
 
 /* Checkout success */
