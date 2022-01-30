@@ -11,7 +11,7 @@ nav,
 #menu_checkbox:checked ~ nav {
     display: block;
     position: absolute;
-    top: 60px;
+    top: 80px;
 }
 
 h1 {
@@ -43,7 +43,7 @@ h3 {
 .hamburger_icon{
     position: absolute;
     font-size: 30px;
-    padding: 20px;
+    padding: 10px;
 }
 
 header {
