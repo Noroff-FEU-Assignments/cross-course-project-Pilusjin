@@ -1,16 +1,16 @@
 export const productArray = [
     {
-        name: "boxer",
+        name: "Boxer",
         id: "1",
         price:150,
     },
     {
-        name: "furious",
+        name: "Furious",
         id: "2",
         price: 180,
     },
     {
-        name: "assassin",
+        name: "Assassin",
         id: "3",
         price: 100,
 
