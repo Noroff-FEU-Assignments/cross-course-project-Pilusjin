@@ -35,6 +35,11 @@ h3 {
     text-align: center;
 }
 
+p {
+    text-align: center;
+    margin: auto;
+    display: grid;
+}
 .xlarge_header {
     font-size: 80px;
     color: #fff;
@@ -249,7 +254,7 @@ textarea {
 /* Buy games */
 
 .games_images {
-    width: 200px;
+    width: 500px;
 }
 .list {
     border: 3px solid #000000;
@@ -262,19 +267,26 @@ textarea {
 }
 .products {
     text-align: center;
-    border: 3px solid #211426;
+    border: 2px solid #211426;
     padding: 8px 8px;
     display: block;
     margin: 10px auto;
-}
-.product_list,
-.product_for_sale {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-    max-width: 1000px;
+
+}
+.game_spesific {
+    display: grid;
     margin: auto;
-    padding-bottom: 50px;
+    max-width: 1000px;
+}
+.product_list 
+    .product_for_sale {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        max-width: 1000px;
+        margin: auto;
+        padding-bottom: 50px;
   }
 
 @media (min-width: 700px) {
