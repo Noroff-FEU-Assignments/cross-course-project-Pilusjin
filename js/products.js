@@ -1,37 +1,27 @@
-import { productArray } from "./productList.js";
-const productsContainer = document.querySelector(".buyproduct");
-const cart = document.querySelector(".cartsecond");
-const cartList = document.querySelector("cart-list");
-let cartArray = [];
+const url = "http://localhost:10008/wp-json/wc/store/products";
+const productContainer = document.querySelector(".products");
 
-productArray.forEach(function(product){
-    productsContainer.innerHTML +=
-    `
-    <div class="list">
-        <h2>${product.name}</h2>
-        <p>${product.id}</p>
-        <dic class="product-price">${product.price}</div>
-        <button class="cta-standard" data.product=${product.id}">Add to cart
-        </div>
-    `
-})
-
-const buttons = document.querySelectorAll("button");
-buttons.forEach(function(button){
-    button.onclick = function(event){
-        const itemToAdd = productArray.find(item => item.id === event.target.dataset.product);
-        cartArray.push(itemToAdd); 
-        showCart(cartArray);
+async function getProducts(){
+    try{
+        const response = await fetch(url);
+        const getResults = await response.json();
+        createHTML(getResults);
     }
-})
 
-function showCart(cartItems){
-    cart.style.display = "block";
-    cartList.innerHTML = "";
-    cartItems.forEach(function(cartElement){
-    cartList.innerHTML += 
-        `<div class="cart-item">
-        <h4>${cartElement.name}</h4>
-        </div>`
+    catch(error){
+        console.log(error);
+    }
+}
+
+getProducts();
+
+
+function createHTML(products){
+    products.forEach(function(product){
+        productContainer.innerHTML += `<div class="product_list"> 
+        <img src="${product.images[0].src}" alt="${product.name}" class="jacket_img">
+        <h3>${product.name}</h3> 
+        <p>${product.price} kr </p>
+        </div>`;
     })
 }
