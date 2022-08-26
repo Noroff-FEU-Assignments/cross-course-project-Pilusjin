@@ -6,9 +6,9 @@ const id = params.get("id");
 
 console.log(id)
 
-const url = "http://localhost:10008/wp-json/wc/store/products/" + id;
+const url = "https://gamehub.pilusjin.site/wp-json/wc/store/products/" + id;
 const proxy = "https://noroffcors.herokuapp.com/";
-const prductUrl = proxy +url;
+const prductUrl = proxy + url;
 
 console.log.apply(url);
 
@@ -36,7 +36,7 @@ function createHTML(results) {
     detailContainer.innerHTML +=    `<h1>${results.name}</h1>
                                     <img src="${results.images[0].src}" alt="${results.name}" class="product_image">
                                     <h2>${results.prices.price} kr </h2>
-                                    <p>${results.short_description}</p>`;
+                                    <p>${results.description}</p>`;
 
 
 }

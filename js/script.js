@@ -1,4 +1,4 @@
-const url = "http://localhost:10008/wp-json/wc/store/products";
+const url = "https://gamehub.pilusjin.site/wp-json/wc/store/products";
 const productContainer = document.querySelector(".products");
 
 async function getProducts(){
